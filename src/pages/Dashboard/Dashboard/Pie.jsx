@@ -8,7 +8,7 @@ const MyResponsivePie = ({ data }) => {
 
     useEffect(() => {
         const positionX = windowSize === "lg" ? -320 : windowSize === "xl" ? -300 : -350;
-        const positionY = windowSize === "xl" ? -100 : -100;
+        const positionY = 50;
         setPosition((pre) => {
             return { ...pre, x: positionX, y: positionY };
         })
