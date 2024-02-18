@@ -1,6 +1,6 @@
 # Nutribridge
 
-**Live Link:**
+**Live Link:** [https://nutribridge.vercel.app/](https://nutribridge.vercel.app/)
 
 The project aims to develop a comprehensive Food Distribution and Supplies Management System using React, Redux for state management, RTK Query for efficient data fetching, and React Router DOM for navigation. This platform will serve as a vital tool for coordinating and managing the distribution of food and essential supplies to communities in need, ensuring accessibility to nutritious meals and basic necessities.
 
@@ -50,4 +50,5 @@ npm  run  dev
 ```
 
 - Open your browser and go to `http://localhost:3000` to see the landing page
+
 # nutribridge
