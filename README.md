@@ -28,13 +28,13 @@ To run this project, you need to have Node.js and npm installed on your machine.
 Clone this repository:
 
 ```bash
-git clone https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-DaEagle01.git
+git clone https://github.com/DaEagle01/nutribridge.git
 ```
 
 Go to the project directory
 
 ```bash
-cd  l2-b2-assignment-6-fronten-DaEagle01
+cd  nutribridge
 ```
 
 Install dependencies
