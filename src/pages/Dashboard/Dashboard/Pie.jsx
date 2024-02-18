@@ -8,7 +8,7 @@ const MyResponsivePie = ({ data }) => {
 
     useEffect(() => {
         const positionX = windowSize === "lg" ? -320 : windowSize === "xl" ? -300 : -350;
-        const positionY = 50;
+        const positionY = 100;
         setPosition((pre) => {
             return { ...pre, x: positionX, y: positionY };
         })
@@ -82,7 +82,7 @@ const MyResponsivePie = ({ data }) => {
                     justify: false,
                     translateX: position.x,
                     translateY: position.y,
-                    itemsSpacing: 20,
+                    itemsSpacing: 5,
                     itemWidth: 100,
                     itemHeight: 18,
                     itemTextColor: '#999',
