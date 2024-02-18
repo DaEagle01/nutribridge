@@ -87,7 +87,7 @@ const UpdateSupplyModal = ({ item }) => {
                         </label>
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">Item category</span>
+                                <span className="label-text">Item quantity</span>
                             </div>
                             <input
                                 name="quantity"
