@@ -28,7 +28,6 @@ const suppliesApi = baseApi.injectEndpoints({
 
     updateSupplyItem: builder.mutation({
       query: (userInfo) => {
-        console.log(userInfo)
         return {
           url: `/supplies/${userInfo._id}`,
           method: "PATCH",
