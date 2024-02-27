@@ -4,19 +4,21 @@ import { cn } from "../../utils/cn";
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from "../../redux/features/auth/authSlice";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import ToggleMode from "../ToggleMode";
 
 const Navbar = () => {
     const userEmail = useSelector(state => state?.auth?.user?.email);
     const dispatch = useDispatch();
 
     return (
-        <header className="h-16 py-6 fixed w-full bg-white z-[999]">
+        <header className="h-16 py-6 fixed w-full bg-white dark:bg-gray-800 z-[999]">
             <nav className="w-full h-full max-w-[90rem] mx-auto flex justify-between items-center px-4 lg:px-20">
                 <NavLink to="/" className='h-10'>
-                    <img className="h-full" src={logo} alt="" />
+                    <img className="h-full rounded-md" src={logo} alt="" />
                 </NavLink>
-                <ul className="space-x-4 lg:space-x-8 hidden sm:block">
-                    <NavLink to="/supplies" className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5", { "text-teal-500": isActive })}>All Supplies</NavLink>
+                <ul className="space-x-4 lg:space-x-8 hidden sm:flex items-center">
+                    <ToggleMode />
+                    <NavLink to="/supplies" className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5 dark:text-white", { "text-teal-500": isActive })}>All Supplies</NavLink>
                     {userEmail && (
                         <NavLink to="/dashboard" className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5", { "text-teal-500": isActive })}>Dashboard</NavLink>
                     )}
