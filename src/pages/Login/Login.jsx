@@ -50,7 +50,7 @@ const Login = () => {
                             <button
                                 type="submit"
                                 disabled={isLoading}
-                                className={`flex justify-center items-center gap-2 w-full text-white ${isLoading ? "bg-emerald-700" : "bg-emerald-600"} hover:bg-emerald-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
+                                className={`flex justify-center items-center gap-2 w-full text-white ${isLoading ? "bg-teal-700" : "bg-teal-600"} hover:bg-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
                             >
                                 Login
                                 {isLoading && <span className="loading loading-spinner loading-xs"></span>}

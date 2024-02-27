@@ -34,7 +34,7 @@ const SupplyPosts = () => {
                 )}
             </div>
             <NavLink to="/supplies" className="flex justify-center w-max mx-auto mt-7 sm:mt-12">
-                <button className="px-8 py-3 sm:px-12 sm:py-4 rounded-full bg-emerald-500 font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-all hover:bg-green-500 duration-700">
+                <button className="px-8 py-3 sm:px-12 sm:py-4 rounded-full bg-teal-500 font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-all hover:bg-teal-600 duration-700">
                     View All
                 </button>
             </NavLink>

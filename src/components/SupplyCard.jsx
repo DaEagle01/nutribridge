@@ -39,7 +39,7 @@ const SupplyCard = ({ index, supply }) => {
                     </p>
                 </div>
                 <NavLink to={detailsRoute} state={{ supply }} className="flex justify-center">
-                    <button className={`mt-2 text-center text-lg w-4/6 font-bold bg-emerald-300 py-1.5 rounded-xl shadow-lg`}>
+                    <button className={`mt-2 text-center text-lg w-4/6 font-bold bg-teal-300 py-1.5 rounded-xl shadow-lg`}>
                         View Details
                     </button>
                 </NavLink>
