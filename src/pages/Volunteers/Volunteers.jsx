@@ -27,7 +27,7 @@ const Volunteers = () => {
     return (
         <div className="w-full py-12 mx-auto">
             <div className="grid gap-10 px-4 md:grid-cols-2 lg:px-6">
-                <div className="flex justify-center items-center px-8 aspect-w-10 aspect-h-6">
+                <div className="hidden sm:flex justify-center items-center px-8 aspect-w-10 aspect-h-6">
                     <img
                         src="https://img.freepik.com/free-photo/sustainable-travel-concept_23-2151049524.jpg?t=st=1709130998~exp=1709134598~hmac=6c472ea8f281749ded077c121e97f5deea7741f67898e913474a31b840b508c4&w=740"
                         alt="Image"
@@ -36,8 +36,8 @@ const Volunteers = () => {
                 </div>
                 <div className="space-y-6">
                     <div className="space-y-2">
-                        <h1 className="text-gray-700 dark:text-gray-100 text-3xl font-bold">Find Virtual Volunteer Opportunities</h1>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <h1 className="text-gray-700 dark:text-gray-100 text-2xl sm:text-3xl font-bold text-center sm:text-left">Find Virtual Volunteer Opportunities</h1>
+                        <p className="text-gray-500 dark:text-gray-400 text-center sm:text-left">
                             Enter your information below to find volunteer opportunities near you.
                         </p>
                     </div>

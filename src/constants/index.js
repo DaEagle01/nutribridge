@@ -1,4 +1,4 @@
-export const bgColors = ['bg-orange-100', 'bg-teal-100', 'bg-cyan-100', 'bg-fuchsia-100', 'bg-violet-100', 'bg-amber-100'];
+export const bgColors = ['bg-orange-100 dark:bg-orange-400', 'bg-teal-100 dark:bg-teal-400', 'bg-cyan-100 dark:bg-cyan-400', 'bg-fuchsia-100 dark:bg-fuchsia-400', 'bg-violet-100 dark:bg-violet-400', 'bg-amber-100 dark:bg-amber-400'];
 
 export const borderColors = ['border-orange-600', 'border-teal-600', 'border-cyan-600', 'border-fuchsia-600', 'border-violet-600', 'border-amber-600'];
 
@@ -116,6 +116,10 @@ export const supplyItems = [
 ]
 
 export const publicRoutes = [
+    {
+        path: "/",
+        name: "Home"
+    },
     {
         path: "/supplies",
         name: "All Supplies"

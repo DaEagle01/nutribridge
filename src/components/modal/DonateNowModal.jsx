@@ -17,7 +17,7 @@ const DonateNowModal = ({ item }) => {
 
     return (
         <dialog id="donate-now" className="modal">
-            <div className="modal-box">
+            <div className="modal-box dark:bg-gray-700 dark:text-gray-100">
                 <button onClick={() => document.getElementById('donate-now').close()} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-5">✕</button>
                 <h3 className="font-bold text-lg">
                     Donate Now
@@ -29,7 +29,7 @@ const DonateNowModal = ({ item }) => {
                     <form method="dialog" onSubmit={handleSubmit} className="space-y-2 w-full">
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">What is your name?</span>
+                                <span className="label-text  dark:text-gray-100">What is your name?</span>
                             </div>
                             <input
                                 name="name"
@@ -38,12 +38,12 @@ const DonateNowModal = ({ item }) => {
                                 required
                                 type="text"
                                 placeholder="Type your name"
-                                className="input input-bordered w-full px-2 h-10"
+                                className="input input-bordered w-full px-2 h-10 dark:bg-gray-300"
                             />
                         </label>
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">What is your email?</span>
+                                <span className="label-text  dark:text-gray-100">What is your email?</span>
                             </div>
                             <input
                                 name="email"
@@ -52,40 +52,40 @@ const DonateNowModal = ({ item }) => {
                                 required
                                 type="email"
                                 placeholder="Type your email"
-                                className="input input-bordered w-full px-2 h-10"
+                                className="input input-bordered w-full px-2 h-10 dark:bg-gray-300"
                             />
                         </label>
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">Supply item name</span>
+                                <span className="label-text  dark:text-gray-100">Supply item name</span>
                             </div>
                             <input
                                 disabled
                                 value={item.title}
-                                className="input input-bordered w-full px-2 h-10"
+                                className="input input-bordered w-full px-2 h-10 dark:bg-gray-300"
                             />
                         </label>
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">Item category</span>
+                                <span className="label-text  dark:text-gray-100">Item category</span>
                             </div>
                             <input
                                 disabled
                                 value={item.category}
-                                className="input input-bordered w-full px-2 h-10"
+                                className="input input-bordered w-full px-2 h-10 dark:bg-gray-300"
                             />
                         </label>
                         <label className="form-control w-full">
                             <div className="label py-1">
-                                <span className="label-text">Item quantity</span>
+                                <span className="label-text  dark:text-gray-100">Item quantity</span>
                             </div>
                             <input
                                 disabled
                                 value={item.quantity}
-                                className="input input-bordered w-full px-2 h-10"
+                                className="input input-bordered w-full px-2 h-10 dark:bg-gray-300"
                             />
                         </label>
-                        <button type="submit" className="btn w-full text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded" style={{ marginTop: "2rem" }}>
+                        <button type="submit" className="btn w-full text-white bg-teal-500 dark:bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 dark:hover:bg-teal-700 rounded" style={{ marginTop: "2rem" }}>
                             Donate
                         </button>
                     </form>

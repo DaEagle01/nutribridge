@@ -21,7 +21,7 @@ const DashboardSidebar = () => {
     return (
         <div>
             <div className="">
-                <aside id="logo-sidebar" className="fixed left-0 top-0 w-max md:w-[16.7%] h-max px-1 md:px-6 transition-transform bg-white border-gray-200 pt-20" aria-label="Sidebar">
+                <aside id="logo-sidebar" className="fixed left-0 top-0 w-max md:w-[16.7%] h-max px-1 md:px-6 transition-transform bg-white dark:bg-gray-800 border-gray-200 pt-20" aria-label="Sidebar">
                     <div className="h-full pb-4 overflow-y-auto">
                         <div className="space-y-3 font-medium">
                             {
@@ -29,9 +29,9 @@ const DashboardSidebar = () => {
                                     <NavLink
                                         key={option.path}
                                         to={`/dashboard${option.path}`}
-                                        className={cn("flex items-center gap-4 px-1 py-1 md:px-2 md:py-4 text-gray-500 hover:text-teal-500 rounded-lg hover:bg-gray-100",
+                                        className={cn("flex items-center gap-4 px-1 py-1 md:px-2 md:py-4 text-gray-500 hover:text-teal-500 dark:hover:text-gray-100 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600",
                                             {
-                                                "bg-gray-100 text-teal-500": isRouteActive(option.path)
+                                                "bg-gray-100 dark:bg-gray-600 text-teal-500 dark:text-gray-100": isRouteActive(option.path)
                                             })}
                                     >
                                         <option.icon className="w-4 h-4 shrink-0" />

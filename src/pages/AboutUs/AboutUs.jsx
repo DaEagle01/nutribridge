@@ -8,7 +8,7 @@ const AboutUs = () => {
             <section className="w-full py-12">
                 <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 space-y-5">
                     <div className="text-center space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Volunteers</h2>
+                        <h2 className="dark:text-gray-100 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Volunteers</h2>
                         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             Meet the dedicated volunteers who make it possible to deliver meals and essential supplies to those in
                             need. Their hard work and commitment help build stronger and more resilient communities.

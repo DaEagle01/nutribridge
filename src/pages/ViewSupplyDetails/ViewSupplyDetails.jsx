@@ -22,30 +22,30 @@ const ViewSupplyDetails = () => {
 
                 </div>
             ) : (
-                <section className="text-gray-700 body-font overflow-hidden bg-white">
+                <section className="text-gray-700 body-font overflow-hidden bg-white dark:bg-gray-800">
                     <div className="py-8 mx-auto">
                         <div className="w-full mx-auto flex flex-wrap">
                             <div className="w-1/2 h-[30rem]">
-                                <img className="w-full h-full rounded object-fill object-scale-down" src={item?.image} alt={`${item?.title} image`} />
+                                <img className="w-full h-full rounded-xl object-fill object-scale-down" style={{ borderRadius: "1rem" }} src={item?.image} alt={`${item?.title} image`} />
                             </div>
                             <div className="md:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0
                         flex flex-col gap-4">
-                                <h1 className="text-gray-900 text-3xl title-font font-bold">
+                                <h1 className="text-gray-900 dark:text-gray-100 text-3xl title-font font-bold">
                                     {item?.title}
                                 </h1>
-                                <p className={`text-gray-800 text-base font-semibold `}>
+                                <p className={`text-gray-800 dark:text-gray-100 text-base font-semibold `}>
                                     Category: {" "}
-                                    <span className="bg-fuchsia-100 w-max px-2 cursor-pointer rounded-xl">
+                                    <span className="bg-fuchsia-100 dark:text-gray-700 w-max px-2 cursor-pointer rounded-xl">
                                         {item?.category}
                                     </span>
                                 </p>
-                                <p className={`text-gray-800 text-base font-semibold `}>
+                                <p className={`text-gray-800 text-base font-semibold dark:text-gray-100`}>
                                     Quantity: {" "}
-                                    <span className="bg-pink-100 w-max px-2 cursor-pointer rounded-xl">
+                                    <span className="bg-pink-100 dark:text-gray-700 w-max px-2 cursor-pointer rounded-xl">
                                         {item?.quantity}
                                     </span>
                                 </p>
-                                <p className="leading-relaxed">
+                                <p className="leading-relaxed dark:text-gray-200 ">
                                     {item?.description}
                                 </p>
                                 <button

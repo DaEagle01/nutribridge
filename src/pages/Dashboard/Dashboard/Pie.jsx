@@ -42,7 +42,7 @@ const MyResponsivePie = ({ data }) => {
                 ]
             }}
             arcLinkLabelsSkipAngle={10}
-            arcLinkLabelsTextColor="#333333"
+            arcLinkLabelsTextColor={{ from: 'color' }}
             arcLinkLabelsThickness={2}
             arcLinkLabelsColor={{ from: 'color' }}
             arcLabelsSkipAngle={10}
@@ -73,31 +73,6 @@ const MyResponsivePie = ({ data }) => {
                     rotation: -45,
                     lineWidth: 6,
                     spacing: 10
-                }
-            ]}
-            legends={[
-                {
-                    anchor: 'bottom',
-                    direction: 'column',
-                    justify: false,
-                    translateX: position.x,
-                    translateY: position.y,
-                    itemsSpacing: 5,
-                    itemWidth: 100,
-                    itemHeight: 18,
-                    itemTextColor: '#999',
-                    itemDirection: 'left-to-right',
-                    itemOpacity: 1,
-                    symbolSize: 18,
-                    symbolShape: 'circle',
-                    effects: [
-                        {
-                            on: 'hover',
-                            style: {
-                                itemTextColor: '#000'
-                            }
-                        }
-                    ]
                 }
             ]}
         />

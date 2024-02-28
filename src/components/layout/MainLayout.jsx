@@ -9,7 +9,7 @@ const MainLayout = () => {
         <>
             <ScrollToTop />
             <Navbar />
-            <Container className="pt-16 lg:pt-20">
+            <Container className="pt-16">
                 <Outlet />
             </Container>
             <Footer />

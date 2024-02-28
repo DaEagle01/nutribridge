@@ -9,8 +9,8 @@ const Dashboard = () => {
     })
 
     return (
-        <div className="bg-white h-[100vh] w-full p-2 md:p-4 rounded-lg">
-            <h1 className="text-xl sm:text-3xl font-bold text-gray-700 text-center md:text-left md:mb-8">
+        <div className="bg-white dark:bg-gray-800 h-[100vh] w-full p-2 md:p-4 rounded-lg">
+            <h1 className="text-xl sm:text-3xl font-bold text-gray-700 dark:text-gray-100 text-center md:text-left md:mb-8">
                 Supply Distribution Statistics
             </h1>
             {

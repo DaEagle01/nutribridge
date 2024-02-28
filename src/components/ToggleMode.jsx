@@ -9,13 +9,13 @@ const ToggleMode = () => {
     }, [])
 
     return (
-        <div className="flex justify-center items-center dark:bg-gray-800">
+        <div className="flex justify-center items-center dark:bg-gray-800 -mr-2 sm:-mr-6">
             <button
                 onClick={handleSwitchMode}
-                className={`h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700`}
+                className={`h-10 sm:h-12 w-10 sm:w-12 rounded-lg p-1 sm:p-2 hover:bg-gray-100 dark:hover:bg-gray-700`}
             >
                 <svg
-                    className={`block dark:hidden fill-purple-700`}
+                    className={`block dark:hidden fill-purple-800`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
                 >

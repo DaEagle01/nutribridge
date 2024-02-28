@@ -28,10 +28,10 @@ const Leaderboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {donorsLeaderboard.map(donor => (
+                        {donorsLeaderboard.sort((a, b) => b.amount - a.amount).map(donor => (
                             <tr key={donor.name} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <td className="px-1 sm:px-4 py-4">
-                                    <img src={donor.image} className="w-16 md:w-32 max-w-full max-h-full rounded-t-3xl rounded-b-md" alt={`${donor.name}'s photo`} />
+                                    <img src={donor.image} className="w-16 md:w-32 h-11 md:h-20 max-w-full max-h-full rounded-t-3xl rounded-b-md" alt={`${donor.name}'s photo`} />
                                 </td>
                                 <td className="px-4 sm:px-6 py-4 font-semibold text-gray-900 dark:text-white">
                                     {donor.name}

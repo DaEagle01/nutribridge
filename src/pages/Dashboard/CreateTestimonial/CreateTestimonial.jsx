@@ -21,7 +21,7 @@ const CreateTestimonial = () => {
     };
 
     return (
-        <div className="bg-white h-[100vh] w-full md:p-4 rounded-lg flex justify-between">
+        <div className="bg-white dark:bg-gray-800 h-[100vh] w-full md:p-4 rounded-lg flex justify-between">
             <section className="relative flex flex-wrap lg:h-screen w-full">
                 <div className="hidden md:block relative h-[calc(100vh-10rem)] w-full lg:w-1/2">
                     <img
@@ -32,13 +32,13 @@ const CreateTestimonial = () => {
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-4 pt-0 pb-12">
                     <div className='px-4 md:px-8 pt-4 pb-12 shadow w-full h-max'>
-                        <h1 className='text-xl md:text-3xl font-bold text-gray-800 text-center mb-4 md:mb-8'>
+                        <h1 className='text-xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 text-center mb-4 md:mb-8'>
                             Create Testimonial
                         </h1>
                         <form method="dialog" onSubmit={handleSubmit} className="space-y-2">
                             <label className="form-control w-full">
                                 <div className="label py-1">
-                                    <span className="label-text font-bold">Your name</span>
+                                    <span className="label-text font-bold dark:text-gray-100">Your name</span>
                                 </div>
                                 <input
                                     name="name"
@@ -52,7 +52,7 @@ const CreateTestimonial = () => {
                             </label>
                             <label className="form-control w-full">
                                 <div className="label py-1">
-                                    <span className="label-text font-bold">Your location</span>
+                                    <span className="label-text font-bold dark:text-gray-100">Your location</span>
                                 </div>
                                 <input
                                     name="location"
@@ -66,7 +66,7 @@ const CreateTestimonial = () => {
                             </label>
                             <label className="form-control w-full">
                                 <div className="label py-1">
-                                    <span className="label-text font-bold">Your message</span>
+                                    <span className="label-text font-bold dark:text-gray-100">Your message</span>
                                 </div>
                                 <textarea
                                     name="message"
@@ -78,7 +78,7 @@ const CreateTestimonial = () => {
                                     className="textarea textarea-bordered textarea-lg w-full px-2 pt-0"
                                 />
                             </label>
-                            <button type="submit" disabled={isLoading} className="btn w-full text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded" style={{ marginTop: "2rem" }}>
+                            <button type="submit" disabled={isLoading} className="btn w-full text-white bg-teal-500 dark:bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 dark:hover:bg-teal-700 rounded" style={{ marginTop: "2rem" }}>
                                 Post Testimonial
                             </button>
                         </form>

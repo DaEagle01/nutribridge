@@ -22,48 +22,48 @@ const SuppliesTable = () => {
         document.getElementById('delete-supply').showModal()
     }
     return (
-        <div className="rounded-sm border border-stroke bg-white px-2 md:px-5 md:pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1">
+        <div className=" rounded-lg border dark:border-0 border-stroke bg-white dark:bg-gray-800 px-2 md:px-5 md:pt-6 pb-2.5 shadow-default sm:px-7.5 xl:pb-1">
             <div className="flex justify-between items-center pt-2 mt:pt-4 md:pb-8 md:px-7">
-                <h1 className="text-xl md:text-3xl font-bold text-gray-700">
+                <h1 className="text-xl md:text-3xl font-bold text-gray-700 dark:text-gray-100">
                     All supply items data
                 </h1>
-                <NavLink to="/dashboard/create-supply" className="bg-teal-300  py-2 px-3 rounded-md text-xs lg:text-base font-bold leading-5">
+                <NavLink to="/dashboard/create-supply" className="bg-teal-300 py-2 px-3 rounded-md text-xs lg:text-base font-bold leading-5">
                     Add supply
                 </NavLink>
             </div>
             <div className="max-w-full overflow-x-auto">
                 <table className="w-full table-xs md:table-auto">
                     <thead>
-                        <tr className="bg-gray-2 text-left ">
-                            <th className="md:min-w-[220px] py-2 md:py-4 px-2 md:px-4 font-medium text-black  xl:pl-11">
+                        <tr className="bg-gray-2 text-left text-black dark:text-gray-100">
+                            <th className="md:min-w-[220px] py-2 md:py-4 px-2 md:px-4 font-medium  xl:pl-11">
                                 Title
                             </th>
-                            <th className="md:min-w-[150px] py-2 md:py-4 px-2 md:px-4 font-medium text-black ">
+                            <th className="md:min-w-[150px] py-2 md:py-4 px-2 md:px-4 font-medium ">
                                 Category
                             </th>
-                            <th className="md:min-w-[120px] py-2 md:py-4 px-2 md:px-4 font-medium text-black ">
+                            <th className="md:min-w-[120px] py-2 md:py-4 px-2 md:px-4 font-medium ">
                                 Quantity
                             </th>
-                            <th className="py-4 px-4 font-medium text-black ">
+                            <th className="py-4 px-4 font-medium ">
                                 Actions
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         {supplyItems?.map((item) => (
-                            <tr key={item.id}>
+                            <tr key={item.id} className="text-black  dark:text-gray-100">
                                 <td className="border-b border-[#eee] py-2 md:py-5 px-2 md:px-4 md:pl-9  xl:pl-11">
-                                    <h5 className="font-medium text-black ">
+                                    <h5 className="font-medium">
                                         {item.title}
                                     </h5>
                                 </td>
                                 <td className="border-b border-[#eee] py-2 md:py-5 px-2 md:px-4 ">
-                                    <p className="text-black">
+                                    <p className="">
                                         {item.category}
                                     </p>
                                 </td>
                                 <td className="border-b border-[#eee] py-2 md:py-5 px-2 md:px-4 ">
-                                    <p className="text-black">
+                                    <p className="">
                                         {item.quantity}
                                     </p>
                                 </td>

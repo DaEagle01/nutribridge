@@ -7,12 +7,12 @@ const Testimonial = () => {
     if (error) return null;
 
     return (
-        <div className={`mt-12 ${isLoading ? "h-[20rem]" : "h-[35rem]"} rounded-md flex flex-col antialiased bg-white  items-center relative overflow-hidden`}>
+        <div className={`mt-12 ${isLoading ? "h-[20rem]" : "h-[35rem]"} rounded-md flex flex-col antialiased bg-white dark:bg-gray-800 items-center relative overflow-hidden`}>
             <div className='sm:mb-4 px-2 sm:px-0'>
-                <h1 className="text-3xl sm:text-5xl font-extrabold text-center mb-4">
+                <h1 className="dark:text-gray-100 text-3xl sm:text-5xl font-extrabold text-center mb-4">
                     Testimonials
                 </h1>
-                <h2 className="text-lg sm:text-xl font-semibold text-center mb-4">
+                <h2 className="dark:text-gray-100 text-lg sm:text-xl font-semibold text-center mb-4">
                     What our noble donors has to say about us
                 </h2>
             </div>

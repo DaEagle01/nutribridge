@@ -6,7 +6,7 @@ const SupplyCard = ({ index, supply }) => {
     const detailsRoute = pathname === "/supplies" ? `${supply._id}` : `supplies/${supply._id}`;
 
     return (
-        <div key={supply.id} className="bg-white px-8 py-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <div key={supply.id} className="bg-white dark:bg-gray-700 px-8 py-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
             <div className="relative">
                 <img
                     className="w-full h-64 rounded-xl mx-auto"
@@ -14,7 +14,7 @@ const SupplyCard = ({ index, supply }) => {
                     alt={supply.title}
                 />
             </div>
-            <h1 className="mt-2 text-gray-800 text-3xl font-bold cursor-pointer">
+            <h1 className="mt-2 text-gray-800 dark:text-gray-100 text-3xl font-bold cursor-pointer">
                 {supply.title}
             </h1>
             <div className='mt-2 flex items-end gap-4'>

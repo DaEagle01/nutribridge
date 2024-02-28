@@ -45,14 +45,20 @@ const Navbar = () => {
                     </div>
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <ul className="menu p-4 w-max min-h-full flex flex-col gap-2 bg-slate-100 dark:bg-gray-700 bg-opacity-90 text-base-content">
+                        <ul className="menu p-4 w-[50%] min-h-full flex flex-col gap-2 bg-slate-100 dark:bg-gray-700 bg-opacity-90 text-base-content space-y-2">
                             {
                                 publicRoutes.map(route => (
-                                    <NavLink key={route.path} to={route.path} className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5 dark:text-gray-300", { "text-teal-500 dark:text-white": isActive })}>{route.name}</NavLink>
+                                    <div key={route.path}>
+                                        <NavLink to={route.path} className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5 dark:text-gray-300", { "text-teal-500 dark:text-white": isActive })}>{route.name}</NavLink>
+                                        <div className="w-full bg-gray-700 dark:bg-gray-100 h-[1px]"></div>
+                                    </div>
                                 ))
                             }
                             {userEmail && (
-                                <NavLink to="/dashboard" className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5 dark:text-gray-300", { "text-teal-500 dark:text-white": isActive })}>Dashboard</NavLink>
+                                <div>
+                                    <NavLink to="/dashboard" className={({ isActive }) => cn("text-xs lg:text-base font-bold leading-5 dark:text-gray-300", { "text-teal-500 dark:text-white": isActive })}>Dashboard</NavLink>
+                                    <div className="w-full bg-gray-700 dark:bg-gray-100 h-[1px]"></div>
+                                </div>
                             )}
                             {userEmail ? (
                                 <button onClick={() => dispatch(logout())} className="bg-rose-300 py-1 px-2 rounded-md text-xs lg:text-base font-bold leading-5">Logout</button>
