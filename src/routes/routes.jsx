@@ -12,6 +12,7 @@ import CreateSupply from '../pages/Dashboard/CreateSupply/CreateSupply';
 import Leaderboard from '../pages/Leaderboard/Leaderboard';
 import Community from '../pages/Community/Community';
 import CreateTestimonial from '../pages/Dashboard/CreateTestimonial/CreateTestimonial';
+import Volunteers from '../pages/Volunteers/Volunteers';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "community",
         element: <Community />
+      },
+      {
+        path: "volunteers",
+        element: <Volunteers />
       },
       {
         path: "login",

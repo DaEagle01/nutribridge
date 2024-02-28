@@ -14,6 +14,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -27,7 +30,7 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui"), addVariablesForColors],
+  plugins: [require("daisyui"), addVariablesForColors, require('@tailwindcss/aspect-ratio')],
 }
 
 function addVariablesForColors({ addBase, theme }) {
