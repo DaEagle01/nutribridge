@@ -114,3 +114,23 @@ export const supplyItems = [
         "value": 400
     }
 ]
+
+export const publicRoutes = [
+    {
+        path: "/supplies",
+        name: "All Supplies"
+    },
+    {
+        path: "/leaderboard",
+        name: "Leaderboard"
+    },
+];
+
+export const donorsLeaderboard = [
+    { "name": "Osman Al Ghani", "image": "https://img.freepik.com/free-photo/portrait-good-looking-business-executive-businessman-feeling-happy-doing-lucrative-job-his-stylish-office-with-big-city-view_662251-315.jpg?t=st=1709101089~exp=1709104689~hmac=eed81b4e24c249fb0f6235c089fca33641a281c00913d462d7d5862d1b64e658&w=740", "amount": 7000 },
+    { "name": "Ahamad Hasan", "image": "https://img.freepik.com/free-photo/portrait-handsome-business-man_23-2148479544.jpg?t=st=1709101040~exp=1709104640~hmac=562aca1872c0c6b02e872da56a29b4f29f337cd5f4db1afc07cd78ed0193602b&w=826", "amount": 25000 },
+    { "name": "Zubair Islam", "image": "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?t=st=1709101133~exp=1709104733~hmac=c5fe6c9c27c44af746903f9cc879ff7f124e7d68fa6ac3ae4fa9406d2dac15e8&w=826", "amount": 4500 },
+    { "name": "Jonathan Howard", "image": "https://images.unsplash.com/photo-1544225917-1bf66feace19?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "amount": 3500 },
+    { "name": "Mohamed Ali", "image": "https://images.unsplash.com/photo-1615787421240-3464c7739197?q=80&w=1432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "amount": 3000 },
+    { "name": "Abdur Rahman", "image": "https://img.freepik.com/free-photo/portrait-handsome-bearded-man_23-2149880047.jpg?t=st=1709100748~exp=1709104348~hmac=25ddebcf7f0795eb970c914d7e3c9d28478594c713ba46a68aea36c3331b9229&w=826", "amount": 2000 }
+]

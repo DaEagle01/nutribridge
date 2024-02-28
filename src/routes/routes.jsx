@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import Home from '../pages/Home/Home';
 import AllSupplies from '../pages/AllSupplies/AllSupplies';
@@ -9,6 +9,7 @@ import Register from '../pages/Signup/Register';
 import DashboardLayout from '../components/layout/DashboardLayout';
 import Supplies from '../pages/Dashboard/Supplies/Supplies';
 import CreateSupply from '../pages/Dashboard/CreateSupply/CreateSupply';
+import Leaderboard from '../pages/Leaderboard/Leaderboard';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "supplies/:id",
         element: <ViewSupplyDetails />
+      },
+      {
+        path: "leaderboard",
+        element: <Leaderboard />
       },
       {
         path: "login",

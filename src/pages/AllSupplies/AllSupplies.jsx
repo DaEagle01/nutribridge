@@ -9,10 +9,10 @@ const AllSupplies = () => {
     return (
         <div className="container mx-auto mt-0 py-12">
             <div className='mb-12'>
-                <h1 className="text-5xl font-extrabold text-center mb-4">
+                <h1 className="dark:text-gray-100 text-5xl font-extrabold text-center mb-4">
                     Supply Items
                 </h1>
-                <h2 className="text-xl font-semibold text-center mb-4">
+                <h2 className="dark:text-gray-100 text-xl font-semibold text-center mb-4">
                     Discover the latest supplies available for your community
                 </h2>
             </div>

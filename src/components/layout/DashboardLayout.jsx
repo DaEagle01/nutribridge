@@ -2,10 +2,12 @@ import DashboardSidebar from "./DashboardSidebar"
 import { Outlet } from "react-router-dom"
 import Navbar from "./Navbar"
 import PrivateRoute from "../PrivateRoute"
+import ScrollToTop from "../ScrollToTop"
 
 const DashboardLayout = () => {
     return (
         <PrivateRoute>
+            <ScrollToTop />
             <Navbar />
             <div className='grid grid-cols-12 pt-4 md:pt-16'>
                 <div className='col-span-1 md:col-span-2'>
