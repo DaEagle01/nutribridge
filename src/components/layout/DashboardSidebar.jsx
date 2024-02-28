@@ -1,6 +1,7 @@
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
 import { TbShoppingBagPlus } from "react-icons/tb";
+import { GiSelfLove } from "react-icons/gi";
 import { useLocation, NavLink } from 'react-router-dom';
 import { cn } from '../../utils/cn';
 
@@ -9,6 +10,7 @@ const DashboardSidebar = () => {
         { name: "Dashboard", path: "", icon: MdSpaceDashboard },
         { name: "Supplies", path: "/supplies", icon: FaHandsHelping },
         { name: "Create Supply", path: "/create-supply", icon: TbShoppingBagPlus },
+        { name: "Create Testimonial", path: "/create-testimonial", icon: GiSelfLove },
     ]
     const { pathname: url } = useLocation()
 

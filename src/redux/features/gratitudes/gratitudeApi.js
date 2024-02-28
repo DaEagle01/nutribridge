@@ -11,10 +11,10 @@ const gratitudesApi = baseApi.injectEndpoints({
     }),
 
     createGratitude: builder.mutation({
-      query: (userInfo) => ({
+      query: (data) => ({
         url: "/gratitudes",
         method: "POST",
-        body: userInfo,
+        body: data,
       }),
       invalidatesTags: ['gratitudeItems']
     }),

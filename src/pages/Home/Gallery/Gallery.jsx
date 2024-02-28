@@ -3,7 +3,7 @@ import { SlidingGalleryCard } from "./SlidingGalleryCard";
 
 const Gallery = () => {
     return (
-        <div className="my-12 sm:my-24">
+        <div className="my-12">
             <div className='mb-4'>
                 <h1 className="text-3xl sm:text-5xl font-extrabold text-center sm:mb-4">
                     Gallery

@@ -18,20 +18,20 @@ const suppliesApi = baseApi.injectEndpoints({
     }),
 
     createSupplyItem: builder.mutation({
-      query: (userInfo) => ({
+      query: (data) => ({
         url: "/supplies",
         method: "POST",
-        body: userInfo,
+        body: data,
       }),
       invalidatesTags: ['supplyItems']
     }),
 
     updateSupplyItem: builder.mutation({
-      query: (userInfo) => {
+      query: (data) => {
         return {
-          url: `/supplies/${userInfo._id}`,
+          url: `/supplies/${data._id}`,
           method: "PATCH",
-          body: userInfo,
+          body: data,
         }
       },
       invalidatesTags: ['supplyItems']
