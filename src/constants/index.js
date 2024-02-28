@@ -124,6 +124,10 @@ export const publicRoutes = [
         path: "/leaderboard",
         name: "Leaderboard"
     },
+    {
+        path: "/community",
+        name: "Community"
+    },
 ];
 
 export const donorsLeaderboard = [

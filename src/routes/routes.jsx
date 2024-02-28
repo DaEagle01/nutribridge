@@ -10,6 +10,7 @@ import DashboardLayout from '../components/layout/DashboardLayout';
 import Supplies from '../pages/Dashboard/Supplies/Supplies';
 import CreateSupply from '../pages/Dashboard/CreateSupply/CreateSupply';
 import Leaderboard from '../pages/Leaderboard/Leaderboard';
+import Community from '../pages/Community/Community';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "leaderboard",
         element: <Leaderboard />
+      },
+      {
+        path: "community",
+        element: <Community />
       },
       {
         path: "login",
