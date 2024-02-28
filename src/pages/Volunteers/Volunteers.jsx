@@ -9,6 +9,7 @@ const Volunteers = () => {
         location: "",
         phone: "",
         email: "",
+        image: ""
     })
 
     const handleChange = (e) => {
@@ -19,7 +20,7 @@ const Volunteers = () => {
         e.preventDefault()
         const res = await postVolunteer(info).unwrap();
         if (res?.acknowledged) {
-            setInfo({ firstName: "", lastName: "", location: "", phone: "", email: "" })
+            setInfo({ firstName: "", lastName: "", location: "", phone: "", email: "", image: "" })
         }
     }
 
@@ -62,7 +63,11 @@ const Volunteers = () => {
                                 <label className="label-text font-bold dark:text-gray-300">Location</label>
                                 <input onChange={handleChange} value={info.location} name="location" type="text" placeholder="Enter your location" className="input input-bordered w-full dark:bg-gray-300" />
                             </div>
-                            <button type="submit" disabled={isLoading} className="col-span-12 mt-2 sm:mt-0 px-8 py-2 rounded-md bg-teal-500 dark:bg-teal-600 text-white dark:text-gray-200 font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500">
+                            <div className="col-span-12">
+                                <label className="label-text font-bold dark:text-gray-300">Image</label>
+                                <input onChange={handleChange} value={info.image} name="image" type="text" placeholder="Enter your image link" className="input input-bordered w-full dark:bg-gray-300" />
+                            </div>
+                            <button type="submit" disabled={isLoading} className="col-span-12 mt-4 sm:mt-0 px-8 py-2 rounded-md bg-teal-500 dark:bg-teal-600 text-white dark:text-gray-200 font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500">
                                 Find Opportunity
                             </button>
                         </form>

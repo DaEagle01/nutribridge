@@ -13,6 +13,7 @@ import Leaderboard from '../pages/Leaderboard/Leaderboard';
 import Community from '../pages/Community/Community';
 import CreateTestimonial from '../pages/Dashboard/CreateTestimonial/CreateTestimonial';
 import Volunteers from '../pages/Volunteers/Volunteers';
+import AboutUs from '../pages/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "volunteers",
         element: <Volunteers />
+      },
+      {
+        path: "about-us",
+        element: <AboutUs />
       },
       {
         path: "login",

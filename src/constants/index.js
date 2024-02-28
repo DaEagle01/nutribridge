@@ -132,6 +132,10 @@ export const publicRoutes = [
         path: "/volunteers",
         name: "Volunteers"
     },
+    {
+        path: "/about-us",
+        name: "About Us"
+    },
 ];
 
 export const donorsLeaderboard = [
