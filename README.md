@@ -46,8 +46,8 @@ npm  install
 Create the `.env.local` file in the projects root directory and add the following variables
 
 ```bash
-  - `VITE_SERVER_URL_DEV`: Port number the server listens on. Default: 5000.
-  - `VITE_SERVER_URL_PROD`: Deployed server URL.
+  - VITE_SERVER_URL_DEV: Port number the server listens on. Default: 5000.
+  - VITE_SERVER_URL_PROD: Deployed server URL.
 ```
 
 Start the development server:
