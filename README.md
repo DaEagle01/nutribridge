@@ -43,6 +43,14 @@ Install dependencies
 npm  install
 ```
 
+Add `.env.local` file and the following variables
+
+```bash
+- Environment Variables:
+  - `VITE_SERVER_URL_DEV`: Port number the server listens on. Default: 5000.
+  - `VITE_SERVER_URL_PROD`: Deployed server URL.
+```
+
 Start the development server:
 
 ```bash
@@ -50,5 +58,3 @@ npm  run  dev
 ```
 
 - Open your browser and go to `http://localhost:3000` to see the landing page
-
-# nutribridge
