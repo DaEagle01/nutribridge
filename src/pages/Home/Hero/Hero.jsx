@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ImagesSlider } from "./ImageSlider";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
     const images = [
@@ -29,7 +30,7 @@ const Hero = () => {
                     Feeding bodies, touching hearts,<br className="hidden sm:block" /> changing lives
                 </motion.p>
                 <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative sm:mt-4">
-                    <span>Join Us →</span>
+                    <NavLink to="/volunteers">Join Us →</NavLink>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </button>
             </motion.div>
